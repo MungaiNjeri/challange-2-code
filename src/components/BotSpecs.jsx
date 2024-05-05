@@ -7,7 +7,7 @@ const BotSpecs = ({ bots, enlistBot }) => {
   const [bot, setBot] = useState({});
   console.log (botId)
  useEffect(()=>{
- fetch(`http://localhost:3200/bots/${botId.id}`)
+ fetch(`https://json-server-sg8o.onrender.com/bots/${botId.id}`)
  .then(res=>res.json())
  .then(data=>setBot(data))
  },[])
@@ -24,7 +24,7 @@ const BotSpecs = ({ bots, enlistBot }) => {
           <p className="card-text"> ❤️{bot.health } ⚡{bot.damage} 🛡️{bot.armor}</p>
 
         </div>
-        <button onClick={() => navigate('/')} className="btn btn-secondary">Go back</button>
+        <button onClick={() => navigate('/challange-2-code')} className="btn btn-secondary">Go back</button>
       </div>  
         )}
       </div>

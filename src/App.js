@@ -14,7 +14,7 @@ function App() {
   const [activeSort, setActiveSort] = useState(['']); 
   const [filter, setFilter] =useState ('')
   useEffect(() => {
-    fetch('http://localhost:3200/bots')
+    fetch('https://json-server-sg8o.onrender.com/bots')
       .then(response => response.json())
       .then(data => setBots(data))
       .catch(error => console.log(error));
@@ -52,7 +52,7 @@ setFilter(filter)
 
   const dischargeBot = (bot) => {
     console.log (bot)
-    fetch(`http://localhost:3200/bots/${bot.id}`, {
+    fetch(`https://json-server-sg8o.onrender.com/bots/${bot.id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

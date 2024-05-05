@@ -8,7 +8,7 @@ export default function BotCollection ({ bots, enlistBot }) {
     <div className='d-flex justify-content-center flex-wrap ' style={{gap:'1rem'}} >
       {bots.map(bot => (
         <div key={bot.id} className="card" style={{width: '18rem'}}>
-        <img src={bot.avatar_url}className="card-img-top" alt="..."  onClick={()=>navigate(`/${bot.id}`)}/>
+        <img src={bot.avatar_url}className="card-img-top" alt="..."  onClick={()=>navigate(`/challange-2-code/${bot.id}`)}/>
         <div className="card-body">
           <h5 className="card-title">{bot.name}</h5>
           <p className="card-text">{bot.catchphrase}</p>

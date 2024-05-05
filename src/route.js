@@ -3,11 +3,11 @@ import BotCollection from "./components/BotCollection"
 import BotSpecs from "./components/BotSpecs"
 const routes =[
     {
-        path:'/',
+        path:'/challange-2-code',
         element:<App/>
     },
     {
-        path:'/:id',
+        path:'/challange-2-code/:id',
         element:<BotSpecs/>
     },
     
