@@ -76,7 +76,7 @@ const newBots = bots.filter(bot =>{
   return (
     <>
       <div className="App">
-        <h1>BOT BATTLE</h1>
+        <h1>BOT BATIRR</h1>
         <YourBotArmy army={army} releaseBot={releaseBot} dischargeBot={dischargeBot} />
         <FilterBar  applyFilter={applyFilter}/>
         <SortBar handleSort={handleActiveSort} activeSort={activeSort} /> {/* Pass handleSort and activeSort as props */}
